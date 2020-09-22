@@ -43,8 +43,7 @@ module.exports = {
       },
       typescript: {
         // 配置 eslint-import-resolver-typescript 读取 tsconfig.json 的路径
-        // 目前用不着，先注释掉
-        directory: [resolve('./tsconfig.json')],
+        project: [resolve('./src/tsconfig.json'), resolve('./scripts/tsconfig.json')],
       },
     },
   },
@@ -84,6 +83,7 @@ module.exports = {
     'unicorn/no-null': OFF,
     'unicorn/prevent-abbreviations': OFF,
     'unicorn/no-process-exit': OFF,
+    'unicorn/import-style': OFF,
 
     '@typescript-eslint/explicit-function-return-type': OFF,
     '@typescript-eslint/no-explicit-any': OFF,
@@ -91,8 +91,8 @@ module.exports = {
     '@typescript-eslint/no-useless-constructor': ERROR,
 
     'react/jsx-filename-extension': [ERROR, { extensions: ['.tsx'] }],
-    'react/jsx-indent-props': [ERROR, 4],
-    'react/jsx-indent': [ERROR, 4],
+    'react/jsx-indent-props': [ERROR, 2],
+    'react/jsx-indent': [ERROR, 2],
     'react/require-default-props': OFF,
 
     'func-names': OFF,
@@ -105,6 +105,7 @@ module.exports = {
     'no-underscore-dangle': OFF,
     'no-unused-expressions': OFF,
     'no-useless-constructor': OFF,
+    'no-use-before-define': OFF,
   },
   overrides: [
     {
