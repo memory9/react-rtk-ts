@@ -17,7 +17,6 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:unicorn/recommended',
-    'plugin:promise/recommended',
     'prettier',
     'prettier/react',
     'prettier/@typescript-eslint',
@@ -85,6 +84,7 @@ module.exports = {
     'unicorn/no-process-exit': OFF,
     'unicorn/import-style': OFF,
 
+    '@typescript-eslint/explicit-module-boundary-types': OFF,
     '@typescript-eslint/explicit-function-return-type': OFF,
     '@typescript-eslint/no-explicit-any': OFF,
     '@typescript-eslint/no-non-null-assertion': OFF,
@@ -106,6 +106,8 @@ module.exports = {
     'no-unused-expressions': OFF,
     'no-useless-constructor': OFF,
     'no-use-before-define': OFF,
+
+    'import/prefer-default-export': OFF,
   },
   overrides: [
     {
