@@ -6,7 +6,7 @@ import { getUserInformation } from './utils/requests'
 // import http from './utils/fetch'
 import { modifyUserInfo } from './slices/mine'
 
-const Home = lazy(() => import('./App'))
+const Home = lazy(() => import('./containers/home/index'))
 
 const Routes: React.FC = () => {
   const [shouldRender, setRender] = useState(false)
